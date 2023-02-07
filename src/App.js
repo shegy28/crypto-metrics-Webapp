@@ -10,7 +10,6 @@ function App() {
 
         <Route path="/" element={<Home />} />
         <Route path="/details/:coinId" element={<Details />} />
-      
 
       </Routes>
     </BrowserRouter>

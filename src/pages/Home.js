@@ -15,7 +15,7 @@ const Home = () => {
 
   const arrowClick = (id) => {
     navigate(`/details/${id}`);
-  }
+  };
 
   useEffect(() => {
     dispatch(getCoins());
@@ -64,7 +64,7 @@ const Home = () => {
           />
         </div>
       </div>
-      <CryptoList coins={coins} search={search} arrowClick = {arrowClick} />
+      <CryptoList coins={coins} search={search} arrowClick={arrowClick} />
     </div>
   );
 };
