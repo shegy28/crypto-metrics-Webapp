@@ -1,8 +1,9 @@
 import React from 'react'
 
-const EachCrypto = () => {
+const EachCrypto = ({coin}) => {
+    const {id, priceUsd, supply } = coin;
   return (
-    <div>EachCrypto</div>
+    <div className='each-coin'>{id}</div>
   )
 }
 
