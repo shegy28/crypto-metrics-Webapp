@@ -9,7 +9,7 @@ const EachCrypto = ({ coin }) => {
 };
 
 EachCrypto.propTypes = {
-  coin: PropTypes.string.isRequired,
+  coin: PropTypes.oneOfType([PropTypes.object]).isRequired,
 };
 
 export default EachCrypto;

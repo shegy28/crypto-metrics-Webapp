@@ -19,8 +19,8 @@ const CryptoList = (props) => {
 };
 
 CryptoList.propTypes = {
-  coins: PropTypes.string.isRequired,
-  search: PropTypes.string.isRequired,
+  coins: PropTypes.oneOfType([PropTypes.array]).isRequired,
+  search: PropTypes.oneOfType([PropTypes.object]).isRequired,
 };
 
 export default CryptoList;
