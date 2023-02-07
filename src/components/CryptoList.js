@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import EachCrypto from './EachCrypto';
 
 const CryptoList = (props) => {
-  const { coins, search } = props;
+  const { coins, search, arrowClick} = props;
   return (
     <div className="coin-grid">
       {coins.filter((coin) => {
@@ -12,7 +12,7 @@ const CryptoList = (props) => {
         const name = coin.name.toLowerCase();
         return name.startsWith(filter.toLowerCase());
       }).map((coin) => (
-        <EachCrypto key={coin.id} coin={coin} />
+        <EachCrypto key={coin.id} coin={coin} arrowClick = {arrowClick} />
       ))}
     </div>
   );

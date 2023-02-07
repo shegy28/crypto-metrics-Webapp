@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { useSearchParams } from 'react-router-dom';
+import { useSearchParams, useNavigate } from 'react-router-dom';
 import { BsMic } from 'react-icons/bs';
 import { FiSettings } from 'react-icons/fi';
 import CryptoList from '../components/CryptoList';
@@ -11,6 +11,11 @@ const Home = () => {
   const coins = useSelector((state) => state.coins);
   const dispatch = useDispatch();
   const [search, setSearch] = useSearchParams();
+  const navigate = useNavigate();
+
+  const arrowClick = (id) => {
+    navigate(`/details/${id}`);
+  }
 
   useEffect(() => {
     dispatch(getCoins());
@@ -59,7 +64,7 @@ const Home = () => {
           />
         </div>
       </div>
-      <CryptoList coins={coins} search={search} />
+      <CryptoList coins={coins} search={search} arrowClick = {arrowClick} />
     </div>
   );
 };
