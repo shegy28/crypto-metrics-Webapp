@@ -10,7 +10,7 @@ body {
 .App {
   border: 2px solid purple;
   border-radius: 5px;
-  max-width: 400px;
+  width: 400px;
 }
 
 .hero-head {
@@ -51,4 +51,9 @@ body {
   border: 1px solid black;
   padding: 2%;
   width: auto;
+}
+
+.each-detail {
+  display: flex;
+  justify-content: space-between;
 }
