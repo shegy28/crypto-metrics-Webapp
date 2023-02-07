@@ -1,8 +1,19 @@
 import React from 'react'
+import EachCrypto from './EachCrypto'
 
-const CryptoList = () => {
+const CryptoList = (props) => {
+    const {coins, search} = props
   return (
-    <div>CryptoList</div>
+    <div className='coin-grid'>
+        {coins.filter((coin) => {
+              const filter = search.get('filter');
+              if (!filter) return true;
+              const name = coin.name.toLowerCase();
+              return name.startsWith(filter.toLowerCase());
+            }).map((coin) =>(
+        <EachCrypto key={coin.id} coin ={coin} />
+        ))}
+    </div>
   )
 }
 
