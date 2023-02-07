@@ -9,10 +9,8 @@ body {
 
 .App {
   border: 2px solid purple;
-  
   border-radius: 5px;
   max-width: 400px;
-  
 }
 
 .hero-head {
@@ -29,7 +27,7 @@ body {
 }
 
 .chart {
- display: flex;
+  display: flex;
 }
 
 .chart img {

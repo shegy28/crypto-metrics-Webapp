@@ -1,10 +1,15 @@
-import React from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
 
-const EachCrypto = ({coin}) => {
-    const {id, priceUsd, supply } = coin;
+const EachCrypto = ({ coin }) => {
+  const { id } = coin;
   return (
-    <div className='each-coin'>{id}</div>
-  )
-}
+    <div className="each-coin">{id}</div>
+  );
+};
 
-export default EachCrypto
+EachCrypto.propTypes = {
+  coin: PropTypes.string.isRequired,
+};
+
+export default EachCrypto;
