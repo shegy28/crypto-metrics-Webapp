@@ -79,7 +79,7 @@ exports[`expect home component to match snapshot 1`] = `
         <p>
           0
            
-          coins
+          coins listed
         </p>
       </div>
     </div>
