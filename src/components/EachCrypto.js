@@ -2,16 +2,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { BsArrowRightCircle } from 'react-icons/bs';
 
-const EachCrypto = (props) => {
-  const { coin, arrowClick } = props;
+const EachCrypto = ({ coin, arrowClick }) => {
   const { id, priceUsd, symbol } = coin;
+
   return (
     <div className="each-coin">
-      <button type="button" className="pointer">
-        <BsArrowRightCircle onClick={() => (arrowClick(id))} />
+      <button type="button" className="pointer" onClick={() => (arrowClick(id))} id="icon" title="icon">
+        <BsArrowRightCircle />
       </button>
       <h3>
-        {id.toUpperCase()}
+        {id}
         {' '}
         <br />
         {' '}

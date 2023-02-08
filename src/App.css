@@ -146,6 +146,7 @@ body {
 
 .each-coin h3 {
   margin: 35% 0 7% 0;
+  text-transform: uppercase;
 }
 
 .pointer {
