@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useSearchParams, useNavigate } from 'react-router-dom';
-import { BsMic } from 'react-icons/bs';
-import { FiSettings } from 'react-icons/fi';
+import { BsFillMicFill } from 'react-icons/bs';
+import { AiFillSetting } from 'react-icons/ai';
 import CryptoList from '../components/CryptoList';
 import { getCoins } from '../redux/cryptoHome/cryptoHome';
 import img from '../assets/chart.png';
@@ -26,20 +26,20 @@ const Home = () => {
       <div className="hero-section">
         <div className="hero-head">
           <h2>2023</h2>
-          <h2>CryptoCurrencies</h2>
+          <h4>CryptoCurrencies</h4>
           <div className="hero-icon">
-            <BsMic />
-            <FiSettings />
+            <BsFillMicFill />
+            <AiFillSetting />
           </div>
         </div>
         <div className="chart">
           <img src={img} alt="backgroud chart" />
           <div className="chart-header">
             <h3>
-              Crypto
+              CRYPTO
               <br />
               {' '}
-              Currencies
+              CURRENCIES
             </h3>
             <p>
               {coins.length}
@@ -48,8 +48,9 @@ const Home = () => {
             </p>
           </div>
         </div>
-        <div className="search-bar">
+        <div>
           <input
+            className="search-bar"
             type="text"
             placeholder="Search for coins e.g : ETH"
             value={search.get('filter') || ''}

@@ -10,7 +10,7 @@ body {
 .App {
   border: 2px solid purple;
   border-radius: 5px;
-  width: 400px;
+  width: 350px;
 }
 
 .hero-head {
@@ -18,16 +18,49 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  background-color: #393d55;
+  font-size: 14px;
+  padding: 3%;
+  color: rgb(243, 241, 241);
+}
+
+.hero-head h2,
+.hero-head h4 {
+  margin: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+}
+
+.hero-head div a {
+  text-decoration: none;
+  color: rgb(243, 241, 241);
+  margin-top: 7px;
+  font-size: 20px;
+}
+
+.hero-head h4 {
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .hero-icon {
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(243, 241, 241);
 }
 
 .chart {
   display: flex;
+  background-color: #565b7f;
 }
 
 .chart img {
@@ -35,25 +68,111 @@ body {
 }
 
 .chart-header {
-  background-color: wheat;
-  width: 70%;
+  background-color: #656b94;
+  width: 35%;
+  margin-top: 10px;
+  margin-bottom: 10px;
   z-index: 2;
-  margin-left: -80px;
+  margin-left: -70px;
+  padding: 3% 5%;
+}
+
+.chart-header p {
+  margin: 0;
+}
+
+.chart-header h3 {
+  margin: 0 0 20% 0;
+}
+
+.search-bar {
+  width: 98%;
+  padding: 4% 0 4% 2%;
+  outline: none;
+  border: none;
+  background-color: #797ea4;
+  color: rgb(243, 241, 241);
+}
+
+.search-bar::placeholder {
+  color: rgb(243, 241, 241);
+}
+
+.search-bar:focus::placeholder {
+  color: transparent;
+}
+
+.coin-bar {
+  background-color: #797ea4;
+  color: rgb(243, 241, 241);
+  padding: 2%;
+}
+
+.coin-bar h5 {
+  margin: 0;
 }
 
 .coin-grid {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  overflow-y: scroll;
+  height: 70vh;
+  background-color: #484c6a;
+}
+
+.coin-grid::-webkit-scrollbar {
+  display: none;
 }
 
 .each-coin {
   border: 1px solid black;
-  padding: 2%;
-  width: auto;
+  padding: 2.2%;
+  width: 45%;
+  text-align: right;
+}
+
+.each-coin:nth-child(4n+2),
+.each-coin:nth-child(4n+3) {
+  background-color: #393d55;
+}
+
+.each-coin p {
+  color: rgb(190, 184, 184);
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0%;
+}
+
+.each-coin h3 {
+  margin: 35% 0 7% 0;
+}
+
+.pointer {
+  background-color: inherit;
+  border: none;
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.detail-container {
+  overflow-y: scroll;
+  height: 70vh;
+  color: rgb(201, 198, 198);
+}
+
+.detail-container::-webkit-scrollbar {
+  display: none;
 }
 
 .each-detail {
   display: flex;
   justify-content: space-between;
+  background-color: #484c6a;
+  padding: 2%;
+}
+
+.each-detail:nth-child(odd) {
+  background-color: #393d55;
 }

@@ -22,7 +22,7 @@ const coinsreducer = (state = [], action = {}) => {
     case GET_COINS:
       return action.payload.map((el) => ({
         ...el,
-        priceUsd: parseFloat(el.priceUsd || 0).toFixed(8),
+        priceUsd: parseFloat(el.priceUsd || 0).toFixed(3),
         supply: parseFloat(el.supply || 0).toFixed(4),
         marketCapUsd: parseFloat(el.marketCapUsd || 0).toFixed(4),
         volumeUsd24Hr: parseFloat(el.volumeUsd24Hr || 0).toFixed(4),
