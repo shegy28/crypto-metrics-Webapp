@@ -7,11 +7,11 @@ const EachCrypto = (props) => {
   const { id, priceUsd, symbol } = coin;
   return (
     <div className="each-coin">
-      <button type="button">
+      <button type="button" className='pointer'>
         <BsArrowRightCircle onClick={() => (arrowClick(id))} />
       </button>
       <h3>
-        {id}
+        {id.toUpperCase()}
         {' '}
         <br />
         {' '}
