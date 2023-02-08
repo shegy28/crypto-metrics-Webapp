@@ -30,6 +30,16 @@
 **Crypto Metrics WebApp** is a web application and a platform that utilizes the Coincap API to fetch data on different cryptocurrencies and displays the information for each coin in a comprehensive manner.
 
 ## 🛠 Built With <a name="built-with"></a>
+- Technologies/Tools used:
+| `create-react-app tool`
+| `Webpack(Code Bundlng et al)`
+| `Babel (code transpiling)`
+| `Jest(for testing)`
+| `Git(version control)`
+| `ESLint(JavaScript linting)`
+| `Stylelint(style linting)`
+
+
 
 ### Tech Stack <a name="tech-stack"></a>
 
@@ -58,7 +68,15 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-[Live Version Link](https://spacetravelerhub.onrender.com/)
+[Live Version Link](https://crypto-metrics-webapp.onrender.com/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE Video -->
+
+## 🚀  Video Description <a name="live-demo"></a>
+
+[Video Description Link](https://www.loom.com/share/4fded08bb7f341a09e81fdc6261c80d6)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -152,6 +170,12 @@ Feel free to check the [issues page](https://github.com/shegy28/crypto-metrics-W
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+- Microverse code reviewers for there guidance
+- Data from [CoinCap](https://docs.coincap.io/)
+- Design idea by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- SUPPORT -->
 
 ## ⭐️ Show your support <a name="support"></a>
@@ -160,9 +184,7 @@ If you like this project please share and contribute
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
 

@@ -44,7 +44,7 @@ const Home = () => {
             <p>
               {coins.length}
               {' '}
-              coins
+              coins listed
             </p>
           </div>
         </div>
