@@ -22,6 +22,7 @@ const detailsreducer = (state = [], action = {}) => {
     case GET_DETAILS:
       return {
         ...action.payload,
+        id: action.payload.id.toUpperCase(),
         priceUsd: parseFloat(action.payload.priceUsd || 0).toFixed(8),
         supply: parseFloat(action.payload.supply || 0).toFixed(4),
         marketCapUsd: parseFloat(action.payload.marketCapUsd || 0).toFixed(4),

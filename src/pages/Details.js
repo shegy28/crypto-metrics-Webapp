@@ -19,6 +19,7 @@ const Details = () => {
 
   return (
     <div className="App">
+
       <div className="hero-section">
 
         <div className="hero-head">
