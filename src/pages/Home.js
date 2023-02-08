@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useSearchParams, useNavigate } from 'react-router-dom';
-import { BsFillMicFill} from 'react-icons/bs';
+import { BsFillMicFill } from 'react-icons/bs';
 import { AiFillSetting } from 'react-icons/ai';
 import CryptoList from '../components/CryptoList';
 import { getCoins } from '../redux/cryptoHome/cryptoHome';
@@ -48,7 +48,7 @@ const Home = () => {
             </p>
           </div>
         </div>
-        <div >
+        <div>
           <input
             className="search-bar"
             type="text"

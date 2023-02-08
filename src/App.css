@@ -5,7 +5,6 @@ body {
   flex-direction: column;
   padding: 3rem 0;
   width: 100%;
-  
 }
 
 .App {
@@ -21,19 +20,21 @@ body {
   align-items: center;
   background-color: #393d55;
   font-size: 14px;
-  padding: 2%;
-  color: rgb(243, 241, 241)
+  padding: 3%;
+  color: rgb(243, 241, 241);
 }
 
-.hero-head h2, .hero-head h4  {
+.hero-head h2,
+.hero-head h4 {
   margin: 0;
 }
 
 .nav {
   display: flex;
   justify-content: center;
-  align-items:center ;
+  align-items: center;
   gap: 10px;
+  margin: 0;
 }
 
 .hero-head div a {
@@ -54,7 +55,7 @@ body {
   gap: 20px;
   font-size: 18px;
   font-weight: 600;
-  color: rgb(243, 241, 241)
+  color: rgb(243, 241, 241);
 }
 
 .chart {
@@ -81,7 +82,7 @@ body {
 }
 
 .chart-header h3 {
-  margin: 0 0 20% 0 ;
+  margin: 0 0 20% 0;
 }
 
 .search-bar {
@@ -90,12 +91,13 @@ body {
   outline: none;
   border: none;
   background-color: #797ea4;
-  color: rgb(243, 241, 241)
+  color: rgb(243, 241, 241);
 }
 
 .search-bar::placeholder {
-  color: rgb(243, 241, 241)
+  color: rgb(243, 241, 241);
 }
+
 .search-bar:focus::placeholder {
   color: transparent;
 }
@@ -157,12 +159,13 @@ body {
 .detail-container {
   overflow-y: scroll;
   height: 70vh;
-  color: rgb(201, 198, 198)
+  color: rgb(201, 198, 198);
 }
 
 .detail-container::-webkit-scrollbar {
   display: none;
 }
+
 .each-detail {
   display: flex;
   justify-content: space-between;

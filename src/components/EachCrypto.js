@@ -7,7 +7,7 @@ const EachCrypto = (props) => {
   const { id, priceUsd, symbol } = coin;
   return (
     <div className="each-coin">
-      <button type="button" className='pointer'>
+      <button type="button" className="pointer">
         <BsArrowRightCircle onClick={() => (arrowClick(id))} />
       </button>
       <h3>

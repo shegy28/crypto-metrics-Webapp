@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 // import { useParams } from 'react-router';
 import { useSelector, useDispatch } from 'react-redux';
 import { NavLink, useParams } from 'react-router-dom';
-import { BsFillMicFill} from 'react-icons/bs';
+import { BsFillMicFill } from 'react-icons/bs';
 import { AiFillSetting } from 'react-icons/ai';
 import { FaLessThan } from 'react-icons/fa';
 import { getDetails } from '../redux/cryptoDetails/cryptoDetails';
@@ -19,11 +19,10 @@ const Details = () => {
 
   return (
     <div className="App">
-
       <div className="hero-section">
 
         <div className="hero-head">
-          <div className='nav'>
+          <div className="nav">
             <NavLink to="/">
               {' '}
               <FaLessThan />
@@ -32,7 +31,7 @@ const Details = () => {
           </div>
           <h4>CryptoCurrencies</h4>
           <div className="hero-icon">
-          <BsFillMicFill />
+            <BsFillMicFill />
             <AiFillSetting />
           </div>
         </div>
@@ -41,7 +40,7 @@ const Details = () => {
           <img src={img} alt="backgroud chart" />
           <div className="chart-header">
             <h3>
-              {detail.id.toUpperCase()}
+              {detail.id}
               <br />
               {' '}
               {detail.symbol}
@@ -59,7 +58,7 @@ const Details = () => {
       <div className="detail-container">
         <div className="each-detail">
           <h4>Name :</h4>
-          <h4>{detail.id.toUpperCase()}</h4>
+          <h4>{detail.id}</h4>
         </div>
         <div className="each-detail">
           <h4>Symbol :</h4>
